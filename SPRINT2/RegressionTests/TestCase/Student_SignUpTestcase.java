@@ -16,7 +16,7 @@ import RegressionTestPage.ELSignUp;
 
 //import com.appname.pages.LoginPage;
 
-public class ELSignUpTestcase {
+public class ELStudentSignUpTestcase {
 	static WebDriver driver;
 	
 	static String driverPath = "D:\\chromedriver_win32\\chromedriver.exe";
@@ -36,14 +36,22 @@ public class ELSignUpTestcase {
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	@Test(priority=1)
+	public void regex()
+	{
+		 ELSignUp register = new ELSignUp(driver);
+		 register.checkbeginswithR();
+
+	}
+	
+	@Test(priority=0)
 	public void RegisterStudent()
 	{
 		
 		elogin login = new elogin(driver);
 		 login.clickSignUp();
 		 ELSignUp register = new ELSignUp(driver);
-		 register.register();
+		 register.registerStudent();
 		 try {
 			
 			 boolean success=register.success();
