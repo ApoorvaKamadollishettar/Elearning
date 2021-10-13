@@ -1,0 +1,121 @@
+{
+  "id": "9f65fff0-b4b9-4e79-b7d4-8afebe5c0b93",
+  "version": "2.0",
+  "name": "Elearning",
+  "url": "http://elearningm1.upskills.in",
+  "tests": [{
+    "id": "a3f73f97-9ed7-44f5-a98e-08861894797e",
+    "name": "Course_Catalog",
+    "commands": [{
+      "id": "4de703d9-3dfe-46f1-ad6a-7f218f5156de",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6060dee-4e3c-482e-900e-25e2b2e59790",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1065x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d7544fc-22ca-4749-b24f-f3f235f447e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f554048-73d7-46df-b6ee-c9f1117e680e",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ap123"
+    }, {
+      "id": "601476c7-b649-4965-a23d-96cf48db5df6",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "bc7887a3-df07-4c64-bfe6-8c558d83e366",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-login_submitAuth",
+      "targets": [
+        ["id=form-login_submitAuth", "id"],
+        ["name=submitAuth", "name"],
+        ["css=#form-login_submitAuth", "css:finder"],
+        ["xpath=//button[@id='form-login_submitAuth']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "423c22af-38e6-4929-8746-3d01dbda058f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Course catalog",
+      "targets": [
+        ["linkText=Course catalog", "linkText"],
+        ["css=.list-course > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Course catalog')]", "xpath:link"],
+        ["xpath=//div[@id='coursesCollapse']/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'main/auth/courses.php')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Course catalog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64148dff-f775-4e91-9967-2b852015b499",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.title-courses",
+      "targets": [],
+      "value": "Courses catalog"
+    }, {
+      "id": "b8db95e2-8a31-45ab-b4d8-9859ad81fd2f",
+      "comment": "",
+      "command": "echo",
+      "target": "Course list page loaded successfully",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5048c583-7ea5-401e-9152-f5110c44e2b9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a3f73f97-9ed7-44f5-a98e-08861894797e"]
+  }],
+  "urls": ["http://elearningm1.upskills.in/"],
+  "plugins": []
+}
