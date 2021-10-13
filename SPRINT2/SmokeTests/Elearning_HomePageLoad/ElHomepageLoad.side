@@ -1,0 +1,46 @@
+{
+  "id": "eb83b311-be55-4938-8092-0229aa4c221f",
+  "version": "2.0",
+  "name": "ElHomepageLoad",
+  "url": "http://elearningm1.upskills.in",
+  "tests": [{
+    "id": "b85148db-6662-4c02-ad4c-3ad1c606e2cb",
+    "name": "HomePageLoaded",
+    "commands": [{
+      "id": "e3fa4554-b47d-44ad-809f-1d1eddb6efdb",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "538c4426-eee4-4c47-a8d0-3d9d1bf4b09a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1df9d22-a4bb-4225-9538-748b33e37279",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.administrator-name",
+      "targets": [
+        ["css=.administrator-name", "css:finder"],
+        ["xpath=//main[@id='main']/footer/div/section/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//section/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "Administrator : Site Owner"
+    }]
+  }],
+  "suites": [{
+    "id": "fabd6ca7-96a5-475f-a352-e8338d975c33",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b85148db-6662-4c02-ad4c-3ad1c606e2cb"]
+  }],
+  "urls": ["http://elearningm1.upskills.in/"],
+  "plugins": []
+}
